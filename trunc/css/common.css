@@ -1,0 +1,277 @@
+#header {
+    height: 32px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    float: left;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    float: left;
+    width: 100%;
+    background-color: #ece7e7;
+    border-bottom: thin;
+    border-bottom-style: dotted;
+}
+
+.wrapmiddle {
+    float: left;
+    width: 100%;
+    background-color: #fff;
+}
+
+.middle {
+    margin-right: 41px;
+    margin-left: 41px;
+    background-color: #afeeee;
+    height: 200px;
+}
+
+.left {
+    float: left;
+    width: 31px;
+    margin-left: -100%;
+    background-color: #cfcfcf;
+    height: 200px;
+}
+
+.right {
+    float: left;
+    width: 31px;
+    margin-left: -31px;
+    background-color: #cfcfcf;
+    height: 200px;
+}
+
+.footer {
+    float: left;
+    width: 100%;
+    background-color: #ece7e7;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Segoe UI",Verdana,Helvetica,Sans-Serif;
+}
+
+.opt_cont {
+    width: 300px;
+}
+
+.opt_tbl { width: 70%; }
+
+.opt_tbl tr:nth-child(even) { background: #ffffff;}
+.opt_tbl tr:nth-child(odd) { background: #ece7e7;}
+/*#FFFFCF;*/
+
+.opt_tbl td {
+    padding: 0 5px 0 5px; 
+}
+
+.icnt {
+    float: left;
+    padding: 0 5px 0 5px;
+    display: inline;
+}
+
+#mainPopup {
+    padding: 10px;
+    height: 400px;
+    width: 500px;
+    /*font-family: Helvetica, Ubuntu, Arial, sans-serif;*/
+}
+
+.header h1 {
+    font-size: 1em;
+}
+
+.rightAligned {
+    float: right;
+    margin: 10px;
+}
+
+.sublink {
+    color: green;
+    margin-bottom: 5px;
+    font-size: 13px;
+    padding-left: 10px;
+}
+
+.sublinkgr {
+    color: gray;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.settings {
+    color: green;
+    padding-left: 40px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    padding-left: 130px;
+    background-image: url(/icons/Gears.png);
+    background-repeat: no-repeat;
+}
+
+.cleanlink {
+    background-image: url(/icons/Clean.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    cursor: pointer;
+    padding-right: 0px;
+    padding-left: 16px;
+}
+
+.dellink {
+    cursor: pointer;
+    padding-right: 0px;
+    padding-left: 16px;
+}
+
+.deletedlink {
+    background-image: url(/icons/CancelGr.png);
+    background-repeat: no-repeat;
+    cursor: auto;
+    padding-right: 0px;
+    padding-left: 16px;
+    color: gray;
+    font-size: 14px;
+    /*font-style: italic;*/
+    text-decoration: line-through;
+}
+
+.dellinkho {
+    background-image: url(/icons/Cancel.png);
+    background-repeat: no-repeat;
+}
+
+    .dellinkho:hover {
+        background-color: rgb(246, 241, 182);
+    }
+
+.settings .shead {
+    font-weight: bold;
+    float: left;
+    /*padding-left: 10%;*/
+}
+
+.showhelp {
+    background-image: url(/icons/help32.png);
+    background-repeat: no-repeat;
+    padding: 10px 30px 20px 0px;
+    float: left;
+    width: 20px;
+    /*margin-left: -31px;*/
+    /*height: 20px;*/
+}
+
+.hashelp .help {
+    color: gray;
+    float: left;
+    font-size: 14px;
+    /*font-style: italic;*/
+    position: absolute;
+    background-color: white;
+    border-style: solid;
+    border-width: thin;
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    display: none;
+}
+
+.hashelp:hover .help {
+    display: block;
+}
+
+
+.hasimpexdiv {
+    background: url(/icons/Synchronize.png) no-repeat top left;    
+    padding: 50px 10px 0px 50px;
+}
+
+.impexdiv_shown {
+    /*padding: 50px 10px 0px 50px;*/
+}
+
+.impexdiv {
+    display: none;
+}
+
+/*.hasimpexdiv:hover .impexdiv{*/
+.hasimpexdiv_shown .impexdiv{
+    display: block;
+     border-radius: 15px;
+   -webkit-transition: border-radius 2s;
+}
+
+.impexdiv {
+    background-color: white;
+    cursor: pointer;
+    height: 10%;
+    display: none;
+}
+
+.openall {
+    display: block;
+}
+
+.openall_h {
+    display: none;
+}
+
+.mailPM {
+  background: url(/icons/Mail.png) no-repeat top left;
+  padding: 0 20px 10px 10px;
+}
+
+.mailPMupd{
+  background: url(/icons/NewMail.png) no-repeat top left;
+  padding: 0 20px 10px 10px;
+}
+
+div.colorPicker-picker {
+  height: 16px;
+  width: 16px;
+  padding: 0 !important;
+  border: 1px solid #ccc;
+  background: url(/icons/arrow.gif) no-repeat top right;
+  cursor: pointer;
+  line-height: 16px;
+  font-size:0.75em;
+  font-weight:bold;
+  text-align: center;
+    margin: 5px;
+  display:inline-block;
+}
+
+div.colorPicker-palette {
+  width: 110px;
+  position: absolute;
+  border: 1px solid #598FEF;
+  background-color: #EFEFEF;
+  padding: 2px;
+  z-index: 9999;
+}
+  div.colorPicker_hexWrap {width: 100%; float:left }
+  div.colorPicker_hexWrap label {font-size: 95%; color: #2F2F2F; margin: 5px 2px; width: 25%}
+  div.colorPicker_hexWrap input {margin: 5px 2px; padding: 0; font-size: 95%; border: 1px solid #000; width: 65%; }
+
+div.colorPicker-swatch {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #000;
+  margin: 2px;
+  float: left;
+  cursor: pointer;
+  line-height: 12px;
+}
+
+hr {
+    border-style: dotted;
+    border-width: thin;
+}

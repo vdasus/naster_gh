@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6EAED435-A25A-4BDD-95E0-B410DBABD67C}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\manifest.json = trunc\manifest.json
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{FF4FAFBD-207D-42B3-9BA6-89D6E92F0C19}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\css\common.css = trunc\css\common.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "icons", "icons", "{13498579-1B54-46DD-9540-1AB6AB67D6CF}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\icons\Gears.png = trunc\icons\Gears.png
+		trunc\icons\icon128.png = trunc\icons\icon128.png
+		trunc\icons\icon16.png = trunc\icons\icon16.png
+		trunc\icons\icon19.png = trunc\icons\icon19.png
+		trunc\icons\icon48.png = trunc\icons\icon48.png
+		trunc\icons\Mail.png = trunc\icons\Mail.png
+		trunc\icons\NewMail.png = trunc\icons\NewMail.png
+		trunc\icons\tes_off.png = trunc\icons\tes_off.png
+		trunc\icons\tes_on.png = trunc\icons\tes_on.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{9E207F77-4270-4A69-8D74-B9A57F46CF0A}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\js\jquery-2.0.2.min.js = trunc\js\jquery-2.0.2.min.js
+		trunc\js\omni.js = trunc\js\omni.js
+		trunc\js\utils.js = trunc\js\utils.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4EE6EC27-7036-48B6-8E54-92E62561D075}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "bg", "bg", "{EE3B94C0-4FFA-4A0B-8111-4B5C5F93C043}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\src\bg\background.html = trunc\src\bg\background.html
+		trunc\src\bg\background.js = trunc\src\bg\background.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "browser_action", "browser_action", "{4D909AD2-B3B0-4271-AE5C-4D60063F59C2}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\src\browser_action\browser_action.html = trunc\src\browser_action\browser_action.html
+		trunc\src\browser_action\browser_action.js = trunc\src\browser_action\browser_action.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inject", "inject", "{9AFC4EB5-762B-4CCD-8A82-F28D89F89FAA}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\src\inject\inject.css = trunc\src\inject\inject.css
+		trunc\src\inject\inject.js = trunc\src\inject\inject.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "options", "options", "{86E61E92-AB0B-41EC-A3D0-97A7D70DBB8A}"
+	ProjectSection(SolutionItems) = preProject
+		trunc\src\options\options.html = trunc\src\options\options.html
+		trunc\src\options\options.js = trunc\src\options\options.js
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF4FAFBD-207D-42B3-9BA6-89D6E92F0C19} = {6EAED435-A25A-4BDD-95E0-B410DBABD67C}
+		{13498579-1B54-46DD-9540-1AB6AB67D6CF} = {6EAED435-A25A-4BDD-95E0-B410DBABD67C}
+		{9E207F77-4270-4A69-8D74-B9A57F46CF0A} = {6EAED435-A25A-4BDD-95E0-B410DBABD67C}
+		{4EE6EC27-7036-48B6-8E54-92E62561D075} = {6EAED435-A25A-4BDD-95E0-B410DBABD67C}
+		{EE3B94C0-4FFA-4A0B-8111-4B5C5F93C043} = {4EE6EC27-7036-48B6-8E54-92E62561D075}
+		{4D909AD2-B3B0-4271-AE5C-4D60063F59C2} = {4EE6EC27-7036-48B6-8E54-92E62561D075}
+		{9AFC4EB5-762B-4CCD-8A82-F28D89F89FAA} = {4EE6EC27-7036-48B6-8E54-92E62561D075}
+		{86E61E92-AB0B-41EC-A3D0-97A7D70DBB8A} = {4EE6EC27-7036-48B6-8E54-92E62561D075}
+	EndGlobalSection
+EndGlobal

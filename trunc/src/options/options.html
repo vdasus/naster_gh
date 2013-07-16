@@ -1,0 +1,146 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="/css/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.colorPicker.min.js"></script>
+    <script type="text/javascript" src="/js/utils.js"></script>
+</head>
+<body>
+    <div class="settings ">
+        <span class="shead showhelp hashelp">
+            <div class="help">
+                Например: интервал 10 минут, проверять по 10 одновременно, вы подписаны на 50 ссылок. В этом случае за 
+        10 минут будет сделано 5 проверок, каждая из которых проверит 10 ссылок.
+       <br />
+                <br />
+                Если есть проблемы с производительностью - увеличьте интервал проверок. Либо уменьшите количество 
+        одновременных проверок.
+        <br />
+                <br />
+                Если у вас около 100 подписок - рекомендую устанавливать что-то вроде каждые 5 минут по 15 ссылок.
+            </div>
+        </span>
+        <div class="rightAligned">Настройки NasTer, расширения Google Chrome для tesera.ru. (<a target="_blank" href="http://nastolkus.com/naster/#hhelp">Возможности</a>)</div>
+        <br />
+        <br />
+        <table class="opt_tbl">
+            <tr>
+                <td class="opt_cont">
+                    <label for="tx_nt_comments3">Проверять каждые </label>
+                </td>
+                <td>
+                    <input id="tx_nt_comments3" value="" maxlength="3" size="3" />
+                    минут.</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tx_nt_block3">За один раз проверять сразу </label>
+                </td>
+                <td>
+                    <input id="tx_nt_block3" value="" maxlength="2" size="3" />
+                    ссылок.</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="tx_smallcube">Маленький кубик подписки </label>
+                </td>
+                <td>
+                    <input id="tx_smallcube" type="checkbox" checked /></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tx_ispm">Проверять Личный Ящик </label>
+                </td>
+                <td>
+                    <input id="tx_ispm" type="checkbox" checked /></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="blist">Игнорировать сообщения от (через запятую, nastolkus и Nastolkus это разные ники):</label></td>
+                <td>
+                    <textarea id="blist" rows="4" cols="50"></textarea></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="clrbox">Цвет подсветки новых комментариев </label>
+                </td>
+                <td>
+                    <div>
+                        <input id="clrbox" name="clrbox" type="text" value="" />
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tx_debug">
+                        <sub>Собирать отладочную информацию
+                            <br />
+                            (лучше выключить если нет проблем)</sub></label></td>
+                <td>
+                    <input id="tx_debug" type="checkbox" /></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <br />
+                    <button id="save">Сохранить</button>
+                    <br />
+                    <div id="status"></div>
+                    <br />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="hasimpexdiv">Импорт \ Экспорт</label></td>
+                <td>
+                    <div class="hasimpexdiv" id="hasimpexdiv" title="Импорт \ Экспорт (клик откроет панель)"></div>
+                    <div id="impexdiv" class="impexdiv">
+                        <button id="import">Импортировать</button>
+                        <button id="export">Экспортировать</button>
+                        &nbsp;
+                            <button id="clearall">Удалить всё</button>
+
+                        <br />
+                        <textarea id="impexdivid" rows="10" cols="50"></textarea>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+        <hr />
+        <div class="shead icnt">
+            <span class="shead showhelp hashelp">
+                <div class="help">
+                    Для того, чтобы отписаться от какой-нибудь ссылки - достаточно щёлкнуть на крестик слева от неё.
+            <br />
+                    <br />
+                    Если вы нажмёте на удаление - ссылка станет зачёркнутой. Т.е. вы от страницы УЖЕ отписались.
+            <br />
+                    <br />
+                    Ссылка всё ещё показывается, чтобы если вы ошиблись можно было открыть страницу и подписаться на неё вновь.
+            <br />
+                    <br />
+                    Если перегрузить эту страницу - все зачёркнутые ссылки исчезнут.<br />
+                </div>
+            </span>
+            <label for="icnt" class="icnt">Все подписки:</label>
+            <div id="icnt" class="icnt"></div>
+        </div>
+
+        <br />
+        <br />
+        <div id="setlist"></div>
+        <div>
+            <br />
+            <hr />
+            author: ©<a href="http://vdasus.com">vdasus</a> AKA <a target="_blank" href="http://nastolkus.com">nastolkus</a>, 2012-2013
+        </div>
+        <div>custom search: ©<a target="_blank" href="http://tesera.ru/user/sputnik1818/">sputnik1818</a>, 2013</div>
+    </div>
+</body>
+<script src="options.js"></script>
+</html>

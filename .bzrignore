@@ -1,0 +1,17 @@
+*.~*
+*.obj
+*.suo
+*.cache
+*.pssym 
+*.pdb
+*.bak
+*.log
+*.suo
+**/x86/**/*
+**/_ReSharper.*/**/*
+**/obj/**/*
+**/Debug/**/*
+**/BabelOut/**/*
+temp
+temp/*
+packages

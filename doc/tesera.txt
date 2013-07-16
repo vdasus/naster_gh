@@ -1,0 +1,17 @@
+﻿Alexandr Dubov [mailto:qwatos@gmail.com] 
+
+после api1 просто указывается URI раздела комментариев какого-либо объекта и звёздочку 
+следует заменить на мнемоурл объекта
+
+http://tesera.ru/api1/game/dixit/comments
+http://tesera.ru/api1/person/*/comments
+http://tesera.ru/api1/company/*/comments
+http://tesera.ru/api1/club/*/comments
+http://tesera.ru/api1/project/*/comments
+http://tesera.ru/api1/event/*/comments
+http://tesera.ru/api1/award/*/comments
+http://tesera.ru/api1/article/*/comments
+http://tesera.ru/api1/new/*/comments
+http://tesera.ru/api1/list/*/comments
+http://tesera.ru/api1/user/*/journal/*/comments
+http://tesera.ru/api1/user/*/thought/*/comments

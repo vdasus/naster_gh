@@ -1,0 +1,1 @@
+move /y trunc.crx deploy\NasTer.crx
