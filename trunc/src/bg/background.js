@@ -430,7 +430,7 @@ function getLastForid(adom) {
         rez.push(elements[i].getElementsByClassName("user")[0].getAttribute("forid"));
     }
 
-    return (rez.length > 0) ? rez.max() : Number.MAX_VALUE;
+    return (rez.length > 0) ? getArrayMax(rez) : Number.MAX_VALUE;
 }
 
 function checkPM() {

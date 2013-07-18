@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="browser_action.js" company="vdasus">
-//   Copyright © vdasus AKA nastolkus 2012-2013
+//   Copyright ï¿½ vdasus AKA nastolkus 2012-2013
 // </copyright>
 // <summary>
 //   Main browser action script
@@ -54,7 +54,7 @@ function init() {
                         id: lurl,
                         ddata: actnum,
                         cclass: "cleanlink",
-                        ev: ["click", function () { cleansub(this); }, false],
+                        ev: ["click", function () { cleansub(this); }, false]
                     }, {
                             el: "a",
                             cclass: "sublink",
@@ -65,7 +65,7 @@ function init() {
                     {
                         el: "span",
                         cclass: "sublinkgr",
-                        innerText: sauth + ": " + ldesc.stripX(true).substring(0, 50-lname.length) + "..."
+                        innerText: sauth + ": " + isFromEntity(ldesc, true).substring(0, 50-lname.length) + "..."
                     }]
                     }]
             };
