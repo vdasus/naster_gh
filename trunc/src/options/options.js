@@ -110,7 +110,7 @@ function init() {
                     {
                         el: "span",
                         cclass: "sublinkgr",
-                        innerText: sauth + ldesc.stripX(true)
+                        innerText: sauth + isFromEntity(ldesc, true)
                     }]
                 }]
             };

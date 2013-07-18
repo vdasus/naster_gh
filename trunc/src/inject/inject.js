@@ -60,7 +60,7 @@ function getLastID() {
             rez.push(elements[i].getElementsByClassName("user")[0].getAttribute("forid"));
     }
 
-    return (rez.length > 0) ? String(rez.max()) : "0";
+    return (rez.length > 0) ? getArrayMax(rez) + "" : "0";
 }
 
 function lastseen() {
@@ -91,7 +91,7 @@ function subsButton(lissubs) {
                     el: "img",
                     src: chrome.extension.getURL('icons/tes_on.png'),
                     /*style: "position:fixed; top:250px; right:2px; height:60px;"*/
-                    style: lstyle,
+                    style: lstyle
                 }]
             }]
         };

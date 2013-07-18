@@ -39,28 +39,22 @@ function getFromUrl(url, args, wrap, ref, errRef) {
     xhReq.send(null);
 }
 
-Array.prototype.max = function () {
-    return Math.max.apply(null, this);
-};
+function getArrayMax(arr) {
+    return Math.max.apply(null, arr);
+}
 
-String.prototype.stripX = function (boo) {
-    var str = this;
-    if (boo) {
-        str = str.replace(/&amp;quot;/ig, '"');
-        str = str.replace("/&quot;/ig", "\"");
-        str = str.replace(/&amp;/ig, "&");
-        str = str.replace(/&lt;/ig, "<");
-        str = str.replace(/&gt;/ig, ">");
-    }
-    else {
-        str = str.replace(/"/g, "&quot;");
-        str = str.replace(/&/g, "&amp;");
-        str = str.replace(/\</g, "&lt;");
-        str = str.replace(/\>/g, "&gt;");
-
-    }
-    return str;
-};
+function replaceHTMLEntities(str, isFromEntity) {
+    return (isFromEntity)
+        ? str.replace(/&amp;quot;/ig, '"')
+        .replace("/&quot;/ig", "\"")
+        .replace(/&amp;/ig, "&")
+        .replace(/&lt;/ig, "<")
+        .replace(/&gt;/ig, ">")
+        : str.replace(/"/g, "&quot;")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;");
+}
 
 function buildNode(obj) {
     "use strict";
